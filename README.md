@@ -8,10 +8,12 @@ to other classmates code.
 
 I'm just happy I got it to run :)
 
+![myteamscreen](https://user-images.githubusercontent.com/81400805/123566816-a516e100-d78e-11eb-9fce-8ecf96802f4d.PNG)
 
 
 
 
 
 
+Here is a link to the video
 https://drive.google.com/file/d/1o5-h4NRyJvQ6OFREaGyAM9ceWuHgSR_3/view
