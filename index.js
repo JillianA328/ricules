@@ -108,7 +108,7 @@ var internInfo = function () {
         }
     ])
         .then(response => {
-            const intern = new Intern(response.interName.response.internID,
+            const intern = new Intern(response.internName, response.internID,
                 response.internEmail, response.internSchool);
             team.push(intern);
 
@@ -117,36 +117,45 @@ var internInfo = function () {
 };
 
 
+
+
 //Engineer Info
 var engineerInfo = function () {
     console.log("engineer");
     inquirer.prompt([
         {
             type: 'input',
-            message: 'Engineers name:',
+            message: 'Engineer name:',
             name: 'engineerName',
         },
 
         {
             type: 'input',
-            message: 'Engineers ID:',
+            message: 'Engineer Id:',
             name: 'engineerId',
         },
 
         {
             type: 'input',
-            message: 'Engineers email:',
+            message: 'Engineer email:',
             name: 'engineerEmail',
+        },
+
+        
+        {
+            type: 'input',
+            message: 'Engineer GitHub:',
+            name: 'engineerGitHub',
         },
 
         {
             type: 'input',
-            message: 'Engineers school:',
+            message: 'Engineer school:',
             name: 'engineerSchool',
         }
     ])
         .then(response => {
-            const engineer = new Engineer(response.engineerName.response.engineerID,
+            const engineer = new Engineer(response.engineerName, response.engineerId,
                 response.engineerEmail, response.engineerSchool);
             team.push(engineer);
 
